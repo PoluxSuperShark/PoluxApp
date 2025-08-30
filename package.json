@@ -1,0 +1,37 @@
+{
+  "name": "poluxapp",
+  "version": "1.0.0",
+  "description": "The official app of PoluxSuperShark",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [
+    "PoluxApp",
+    "App",
+    "NodeJS",
+    "JS",
+    "ElectronJS"
+  ],
+  "author": "PoluxSuperShark",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^37.4.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.poluxsupershark.app",
+    "productName": "PoluxApp",
+    "win": {
+      "icon": "build/icon.ico",
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
+}
